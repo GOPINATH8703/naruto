@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project–Travel Bucket</title>
+
+  <style>
+    /* ======= BODY BASIC STYLES ======= */
+    body {
+      font-family: Arial, sans-serif; /* Default font */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ======= HEADER ======= */
+    header {
+      background: #333;      /* Dark background */
+      color: white;          /* White text */
+      padding: 1rem;         /* Inner spacing */
+      text-align: center;    /* Center align text */
+    }
+
+    /* ======= NAVIGATION BAR ======= */
+    nav {
+      background: #444;      /* Slightly lighter dark */
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;        /* Space between links */
+      text-decoration: none; /* Remove underline */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+
+    /* ======= MAIN CONTAINER ======= */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;     /* Center the container */
+      padding: 0 1rem;
+    }
+
+    /* ======= FLEXBOX FOR PLACE CARDS ======= */
+    .places {
+      display: flex;         /* Enable Flexbox */
+      flex-wrap: wrap;       /* Allow items to wrap to next line */
+      gap: 2rem;             /* Gap between cards */
+      justify-content: center; /* Center align all place boxes */
+    }
+
+    /* ======= INDIVIDUAL PLACE CARD ======= */
+    .place {
+      background: #f9f9f9;          /* Light background */
+      padding: 1rem;
+      border-radius: 8px;            /* Rounded corners */
+      flex: 1 1 300px;               /* Grow, shrink, base width */
+      max-width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .place img {
+      max-width: 100%;       /* Image resizes to fit card */
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .place h3 {
+      margin: 0.5rem 0;
+    }
+
+    /* ======= CONTACT SECTION ======= */
+    .contact {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    .contact label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .contact button {
+      padding: 0.7rem 1.5rem;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .contact button:hover {
+      background: #555;
+    }
+
+    /* ======= FOOTER ======= */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= HEADER SECTION ======= -->
+  <header>
+    <h1>Project of Qvesys – Travel Bucket</h1>
+  </header>
+
+  <!-- ======= NAVIGATION BAR ======= -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Places</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- ======= MAIN CONTENT CONTAINER ======= -->
+  <div class="container">
+
+    <!-- ======= FLEXBOX PLACE SECTION ======= -->
+    <div class="places">
+
+      <!-- PLACE 1 -->
+      <div class="place">
+        <img src="ooty-1655457424_bca80f81e8391ebdaaca.webp" Bali>
+        <h3>Bali</h3>
+        <p>Hidden away from the commotions of urban jungles is the Avalanche Lake, a natural, crystal blue freshwater body. Nestled between the green slopes of the Nilgiris, the Avalanche Lake is a picture-perfect location set just over 20 km from Ooty town. The lake, with its refreshing blue waters and soothing greenery of the surrounding woods, is a treat for anyone in search of a getaway destination to escape the fatigue of mundane life. The lake has some of the best views of the Nilgiris, overlooking the undulating hills draped in perfectly aligned tea shrubs and the opulent greenery of the woods. </p>
+      </div>
+
+      <!-- PLACE 2 -->
+      <div class="place">
+        <img src="deer-park-ooty-1657277539_0d7eb167fc536c61ea1f.webp"Amsterdam">
+        <h3>Deer Park, Ooty</h3>
+        <p>Spread over 22 acres in Udhagamandalam town is another tranquil spot near  the Ooty Lake, that is home to a vast number of deer. About six acres of the lake have been used to develop the park.  The park was inaugurated in 1986 and is maintained by the Tamil Nadu Forest Department. Although the name suggests that the park is exclusively for deer, the Deer Park is also home to a wide variety of birds and rabbits. This is one of the high-altitude animal parks in India and is easily accessible by road. </p>
+      </div>
+
+      <!-- PLACE 3 -->
+      <div class="place">
+        <img src="food.jpeg" alt="North Pole">
+        <h3>spicy-food</h3>
+        <p>Food is any substance consumed to provide nutritional support for an organism. It's crucial for survival, providing energy and nutrients for growth and bodily functions. Food can be of plant, animal, or fungal origin and includes essential components like carbohydrates, fats, proteins, vitamins, and minerals food provides the body with energy primarily from carbohydrates, fats, and proteins Plants: Plants convert solar Animals can be a direct food source (herbivores) or a food source for other animals (carnivores and omnivores).   </p>
+      </div>
+
+      <!-- PLACE 4 -->
+      <div class="place">
+        <img src="government-botanical-garden-ooty-1655270207_8acf5053822fbf5b33eb.webp"Rome">
+        <h3>Botanical Garden, Ooty</h3>
+        <p>The Ooty Government Botanical Garden has a lot to offer for Nature lovers with its 600 varieties of plant species cultivated and exhibited here. The verdant lawns and the exotic varieties of flora are pleasing to the eye because they are very well maintained by the Tamil Nadu Horticulture Department. The mighty Doddabetta peak can be viewed from the garden Some of the enticing attractions here are the Cork tree, which is probably one of the very few of its kind in India.</p>
+      </div>
+
+      <!-- PLACE 5 -->
+      <div class="place">
+        <img src="pine-forest-1656503928_d6c35359757cbc521e1b.webp" Barcelona">
+        <h3>Pine-forest</h3>
+        <p>Immortalized in countless Indian movies are the soaring pine woods, awe-inspiring landscapes and pleasant atmosphere of the Pine Tree Forests of Ooty. These woodlands overlooking the majestic view of Sandynulla Lake, are an ideal honeymoon destination. The air scented with pine cones, the rich silence of Nature and the spectacle of dancing butterflies are just a few of the magical elements in these enchanted woods. </p>
+      </div>
+
+    </div> <!-- End of places -->
+
+    <!-- ======= CONTACT FORM SECTION ======= -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Say something"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </div> <!-- End of container -->
+
+  <!-- ======= FOOTER SECTION ======= -->
+  <footer>
+    <p>Created by Gopi</p>
+  </footer>
+
+</body>
+</html>
